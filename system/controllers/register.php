@@ -225,6 +225,14 @@ switch($do){
         break;
 
     case 'register-display':
+	$username	= '';
+	$fullname	= '';
+	$address 	= '';
+	$phonenumber	= '';
+	$ui->assign('username', $username);
+	$ui->assign('fullname', $fullname);
+	$ui->assign('address', $address);
+	$ui->assign('phonenumber', $phonenumber);
         $ui->display('register.tpl');
         break;
 
